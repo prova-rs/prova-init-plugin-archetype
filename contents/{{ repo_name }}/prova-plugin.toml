@@ -1,0 +1,8 @@
+[plugin]
+name        = "{{ name }}"
+entry       = "{{ name }}.lua"
+description = "{{ description }}"
+license     = "MIT"
+
+[requires]
+prova = ">=0.1, <0.2"
