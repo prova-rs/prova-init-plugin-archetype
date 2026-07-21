@@ -1,6 +1,6 @@
--- prova-init-plugin-archetype — scaffolds a Prova project that is ALSO a plugin. It is the `default`
--- archetype's sibling: the same suite shape, but its prova.toml wears the `[plugin]` hat and it ships
--- an entry module (init.lua) plus a self-test. Kind-agnostic — flesh it out into a resource, a
+-- prova-init-plugin-archetype — scaffolds a Prova package that acts as a plugin. It is the `default`
+-- archetype's sibling: the same package shape, but its prova.toml also wears the `[plugin]` hat and it
+-- ships an entry module (init.lua) plus a self-test. Kind-agnostic — flesh it out into a resource, a
 -- topology, or a plain library. Wired into prova's built-in `prova init` catalog as `plugin`.
 --
 -- Derivations are done in Lua (ATL evaluates `{{ }}` as Lua-ish expressions and has no case filters),

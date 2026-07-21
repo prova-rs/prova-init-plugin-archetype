@@ -2,9 +2,9 @@
 
 A plugin for [Prova](https://github.com/prova-rs/prova) — {{ description }}.
 
-In Prova a plugin *is* a test suite that also exports a namespace: one `prova.toml` declares the
-plugin and runs its own proofs. This repo is that — author the plugin in `init.lua`, prove it in
-`tests/`, ship both.
+In Prova a **package** is one `prova.toml`-rooted unit; it can act as a **plugin** (exports a
+namespace) and a **suite** (runs its own proofs). This repo is such a package — author the plugin in
+`init.lua`, prove it in `tests/`, ship both.
 
 ## Use it
 
