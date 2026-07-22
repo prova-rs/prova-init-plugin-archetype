@@ -4,7 +4,7 @@ A plugin for [Prova](https://github.com/prova-rs/prova) — {{ description }}.
 
 In Prova a **package** is one `prova.toml`-rooted unit; it can act as a **plugin** (exports a
 namespace) and a **suite** (runs its own proofs). This repo is such a package — author the plugin in
-`init.lua`, prove it in `tests/`, ship both.
+`init.lua`, prove it in `proofs/`, ship both.
 
 ## Use it
 
@@ -39,7 +39,7 @@ The generated `init.lua` returns a table whose fields are the API. Two common sh
 ## Develop
 
 ```bash
-prova                        # run the self-test in tests/ (hermetic by default)
+prova                        # run the self-test in proofs/ (hermetic by default)
 prova plugin lint init.lua   # check the plugin conforms to the namespacing grammar
 ```
 
