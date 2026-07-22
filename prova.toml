@@ -1,0 +1,8 @@
+# This archetype proves itself: `prova` here renders BOTH plugin variants (standalone and local)
+# into tempdirs and drives the rendered plugin's own suite. It is the archetype's harness, not part
+# of the scaffold — archetect renders only `core/` and `repo/`, so none of this ships.
+[run]
+proofs = ["proofs"]
+
+[luals]
+manage = "auto"

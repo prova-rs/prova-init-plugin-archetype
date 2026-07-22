@@ -1,4 +1,4 @@
 ---
-description: Prova Init — Plugin Archetype
+description: Prova Init — Plugin Archetype (standalone repo, or local under a package's plugin_root)
 requires:
   archetect: "3.0.0"

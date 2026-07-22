@@ -1,0 +1,4 @@
+.DS_Store
+# Generated LuaLS IDE artifacts — prova regenerates these when the self-proof runs.
+/.luarc.json
+/annotations/

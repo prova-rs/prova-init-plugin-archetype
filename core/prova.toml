@@ -11,7 +11,12 @@ license     = "MIT"
 prova = ">=0.3"
 
 # Resolve THIS plugin from its own directory, so the self-tests can `require("{{ name }}")` exactly as
+{% if standalone %}
 # a consumer would. A CONSUMER instead pins it by source — a released tag:
 #   {{ name }} = { git = "https://github.com/{{ org }}/prova-{{ name }}", tag = "v1" }
+{% else %}
+# a consumer would. The owning project needs no declaration at all — this directory lives under its
+# plugin_root, so `require("{{ name }}")` already resolves from any proof.
+{% endif %}
 [plugins]
 {{ name }} = { path = "." }
